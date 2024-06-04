@@ -188,16 +188,17 @@ h2.company-text {
   overflow: hidden;
 }
 .assortment__box {
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  gap: 2em;
-  padding: 6em 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
 }
 .assortment__card {
   position: relative;
-  display: grid;
-  justify-items: center;
-  padding: 3.5em;
+  padding: 4em;
+  margin: 1em;
+  width: 100%;
   text-align: center;
   border: 7px solid transparent;
   border-radius: 8px;
@@ -205,6 +206,7 @@ h2.company-text {
   border-color: #54148f;
 }
 .assortment__card img {
+  margin-top: 25px;
   margin-bottom: 1em;
   width: 150px;
 }
@@ -224,6 +226,7 @@ h2.company-text {
   color: #fff;
   font-size: 12px;
   font-weight: bold;
+  z-index: 5;
 }
 .assortment__card__btn--one:hover ~ .assortment__card--text {
   -webkit-clip-path: circle(110% at 50% 50%);
@@ -249,16 +252,13 @@ h2.company-text {
   background-color: #54148f;
 }
 .assortment__card--text {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
   position: absolute;
-  padding: 40px 30px;
+  padding: 60px 30px;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
-  font-size: 10px;
+  font-size: 14px;
   background-color: rgba(0, 0, 0, 0.85);
   color: #fff;
   -webkit-clip-path: circle(0% at 50% 50%);
@@ -266,14 +266,6 @@ h2.company-text {
   transition: -webkit-clip-path 0.6s;
   transition: clip-path 0.6s;
   transition: clip-path 0.6s, -webkit-clip-path 0.6s;
-}
-.assortment__card--one {
-  grid-row: 1/2;
-  grid-column: 1/-1;
-}
-.assortment__card--two {
-  grid-row: 2/3;
-  grid-column: 1/-1;
 }
 
 .section-title2 {
@@ -529,28 +521,33 @@ h2.company-text {
   .hamburger {
     display: none;
   }
+  .assortment__box {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
   .assortment__card {
-    padding: 3.5em;
+    height: 400px;
+    width: 30%;
+    padding: 2.5em;
   }
   .assortment__card img {
     margin-bottom: 1em;
-    width: 250px;
+    width: 200px;
   }
   .assortment__card h3 {
-    margin-bottom: 1px;
-    text-transform: uppercase;
-    font-size: 28px;
+    margin-bottom: 2em;
+    font-size: 14px;
   }
   .assortment__card__btn--one {
-    font-size: 18px;
+    font-size: 12px;
   }
   .assortment__card--text {
-    padding: 110px 30px;
-    font-size: 22px;
+    padding: 60px 30px;
+    font-size: 14px;
   }
   .assortment__card__btn--two {
-    width: 200px;
-    font-size: 16px;
+    width: 100px;
+    font-size: 12px;
   }
   .footer {
     color: #fff;
@@ -587,5 +584,32 @@ h2.company-text {
   }
   .aboutus__text {
     font-size: 28px;
+  }
+  .assortment__box {
+    flex-wrap: wrap;
+  }
+  .assortment__card {
+    height: 400px;
+    width: 30%;
+    padding: 2.5em;
+  }
+  .assortment__card img {
+    margin-bottom: 1em;
+    width: 200px;
+  }
+  .assortment__card h3 {
+    margin-bottom: 1em;
+    font-size: 14px;
+  }
+  .assortment__card__btn--one {
+    font-size: 12px;
+  }
+  .assortment__card--text {
+    padding: 60px 30px;
+    font-size: 14px;
+  }
+  .assortment__card__btn--two {
+    width: 100px;
+    font-size: 12px;
   }
 }/*# sourceMappingURL=main.css.map */
