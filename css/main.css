@@ -200,6 +200,7 @@ h2.company-text {
   margin: 1em;
   width: 100%;
   text-align: center;
+  overflow: hidden;
   border: 7px solid transparent;
   border-radius: 8px;
   background-color: #fff;
@@ -258,7 +259,7 @@ h2.company-text {
   bottom: 0;
   right: 0;
   left: 0;
-  font-size: 14px;
+  font-size: 16px;
   background-color: rgba(0, 0, 0, 0.85);
   color: #fff;
   -webkit-clip-path: circle(0% at 50% 50%);
@@ -432,7 +433,6 @@ h2.company-text {
   }
   .assortment__card--text {
     padding: 70px 30px;
-    font-size: 16px;
   }
   .assortment__card__btn--two {
     font-size: 14px;
@@ -527,12 +527,11 @@ h2.company-text {
   }
   .assortment__card {
     height: 400px;
-    width: 30%;
+    width: 40%;
     padding: 2.5em;
   }
   .assortment__card img {
     margin-bottom: 1em;
-    width: 200px;
   }
   .assortment__card h3 {
     margin-bottom: 2em;
@@ -543,11 +542,23 @@ h2.company-text {
   }
   .assortment__card--text {
     padding: 60px 30px;
-    font-size: 14px;
+    font-size: 18px;
   }
   .assortment__card__btn--two {
     width: 100px;
     font-size: 12px;
+  }
+  .assortment__card--one img {
+    width: 270px;
+  }
+  .assortment__card--two img {
+    width: 165px;
+  }
+  .assortment__card--three img {
+    width: 250px;
+  }
+  .assortment__card--four img {
+    width: 220px;
   }
   .footer {
     color: #fff;
@@ -590,26 +601,34 @@ h2.company-text {
   }
   .assortment__card {
     height: 400px;
-    width: 30%;
+    width: 40%;
     padding: 2.5em;
-  }
-  .assortment__card img {
-    margin-bottom: 1em;
-    width: 200px;
+    overflow: hidden;
   }
   .assortment__card h3 {
-    margin-bottom: 1em;
-    font-size: 14px;
+    font-size: 21px;
   }
   .assortment__card__btn--one {
     font-size: 12px;
   }
   .assortment__card--text {
     padding: 60px 30px;
-    font-size: 14px;
+    font-size: 28px;
   }
   .assortment__card__btn--two {
     width: 100px;
     font-size: 12px;
+  }
+  .assortment__card--one img {
+    width: 300px;
+  }
+  .assortment__card--two img {
+    width: 180px;
+  }
+  .assortment__card--three img {
+    width: 300px;
+  }
+  .assortment__card--four img {
+    width: 260px;
   }
 }/*# sourceMappingURL=main.css.map */
